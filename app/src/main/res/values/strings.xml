@@ -1,82 +1,171 @@
 <resources>
     <string name="app_name">AppCiudades</string>
 
+    <!--CHULETA-->
+    <!--ciudad_nombreDeLaCiudad -> nombre de la ciudad-->
+    <!--descripcion_nombreDeLaCiudad -> descripcion de la ciudad-->
+    <!--info_nombreDeLaCiudad -> info de la ciudad-->
+
+    <!-- ===================== -->
     <!-- ITALIA -->
-    <string name="info_roma">Roma es una ciudad eterna donde cada calle cuenta una historia. Monumentos como el Coliseo, el Vaticano y sus plazas convierten la visita en un viaje al corazón del Imperio Romano y la cultura europea.</string>
 
-    <string name="info_venecia">Venecia es una ciudad única construida sobre el agua. Sus canales, góndolas y palacios crean una atmósfera romántica y mágica imposible de encontrar en otro lugar del mundo.</string>
+    <string name="ciu_roma">Roma</string>
+    <string name="descripcion_roma">Camina por una ciudad donde cada piedra es historia viva.</string>
+    <string name="info_roma">Roma es una ciudad eterna donde conviven ruinas milenarias, plazas llenas de vida y una cultura que ha marcado al mundo entero. Desde el Coliseo hasta el Vaticano, visitar Roma es viajar al origen de Europa.</string>
 
-    <string name="info_florencia">Florencia es la cuna del Renacimiento. Arte, arquitectura y gastronomía se combinan en una ciudad elegante que alberga algunas de las obras más importantes de la historia.</string>
+    <string name="ciu_venecia">Venecia</string>
+    <string name="descripcion_venecia">Una ciudad única donde las calles son canales.</string>
+    <string name="info_venecia">Venecia está construida sobre el agua y ofrece una experiencia irrepetible entre góndolas, puentes y palacios históricos. Su atmósfera romántica y su arquitectura la convierten en un destino inolvidable.</string>
 
-    <string name="info_milan">Milán es moderna, dinámica y sofisticada. Capital de la moda y el diseño, combina rascacielos con joyas históricas como el Duomo y La Última Cena.</string>
+    <string name="ciu_florencia">Florencia</string>
+    <string name="descripcion_florencia">El arte y la belleza en su forma más pura.</string>
+    <string name="info_florencia">Florencia es la cuna del Renacimiento y un museo al aire libre lleno de historia y elegancia. Sus calles albergan algunas de las obras de arte más importantes del mundo.</string>
 
-    <string name="info_napoles">Nápoles es intensa y auténtica. Situada frente al Vesubio, ofrece historia, carácter mediterráneo y una de las mejores gastronomías del mundo.</string>
+    <string name="ciu_milan">Milán</string>
+    <string name="descripcion_milan">Moda, diseño y una energía imparable.</string>
+    <string name="info_milan">Milán es una ciudad moderna y sofisticada que marca tendencias a nivel mundial. Combina rascacielos, cultura y joyas históricas como su impresionante catedral.</string>
 
-    <string name="info_pisa">Pisa es famosa por su torre inclinada, pero también por su encanto universitario y su ambiente tranquilo junto al río Arno.</string>
+    <string name="ciu_napoles">Nápoles</string>
+    <string name="descripcion_napoles">Auténtica, intensa y con alma mediterránea.</string>
+    <string name="info_napoles">Nápoles es una ciudad vibrante situada a los pies del Vesubio, llena de carácter y tradición. Es famosa por su historia, su energía callejera y su gastronomía legendaria.</string>
 
+    <string name="ciu_pisa">Pisa</string>
+    <string name="descripcion_pisa">Mucho más que una torre inclinada.</string>
+    <string name="info_pisa">Pisa combina historia, ambiente universitario y un ritmo tranquilo junto al río Arno. Su conjunto monumental es uno de los más reconocibles de Italia.</string>
+
+    <!-- ===================== -->
     <!-- FRANCIA -->
-    <string name="info_paris">París es sinónimo de arte, romanticismo y cultura. Sus monumentos, museos y barrios históricos la convierten en una de las ciudades más visitadas del mundo.</string>
 
-    <string name="info_niza">Niza destaca por su luz, su mar y su clima. Es el corazón de la Costa Azul, ideal para disfrutar de playas, paseos marítimos y gastronomía mediterránea.</string>
+    <string name="ciu_paris">París</string>
+    <string name="descripcion_paris">La ciudad que nunca deja de enamorar.</string>
+    <string name="info_paris">París es arte, historia y romanticismo en cada rincón. Sus monumentos, museos y barrios la convierten en una capital cultural incomparable.</string>
 
-    <string name="info_lyon">Lyon es una ciudad elegante y gastronómica. Su casco antiguo y su tradición culinaria la convierten en una parada imprescindible en Francia.</string>
+    <string name="ciu_niza">Niza</string>
+    <string name="descripcion_niza">Luz, mar y el alma de la Costa Azul.</string>
+    <string name="info_niza">Niza ofrece playas, paseos marítimos y un clima privilegiado todo el año. Es perfecta para disfrutar del Mediterráneo con elegancia.</string>
 
-    <string name="info_marsella">Marsella es vibrante y multicultural. Su puerto, su carácter mediterráneo y su cercanía a calas naturales la hacen única.</string>
+    <string name="ciu_lyon">Lyon</string>
+    <string name="descripcion_lyon">Donde la gastronomía es una forma de arte.</string>
+    <string name="info_lyon">Lyon es una ciudad elegante con un casco antiguo lleno de historia. Es considerada la capital gastronómica de Francia.</string>
 
-    <string name="info_burdeos">Burdeos es refinada y tranquila, famosa por sus vinos y su arquitectura clásica. Ideal para quienes buscan cultura y buen vivir.</string>
+    <string name="ciu_marsella">Marsella</string>
+    <string name="descripcion_marsella">Mediterráneo puro, crudo y real.</string>
+    <string name="info_marsella">Marsella es una ciudad portuaria con fuerte personalidad y mezcla cultural. Su costa y su ambiente la hacen única en Francia.</string>
 
-    <string name="info_estrasburgo">Estrasburgo combina tradición francesa y alemana. Su centro histórico y canales crean una atmósfera de cuento.</string>
+    <string name="ciu_burdeos">Burdeos</string>
+    <string name="descripcion_burdeos">Elegancia, vino y calma.</string>
+    <string name="info_burdeos">Burdeos destaca por su arquitectura clásica y su calidad de vida. Es un destino ideal para disfrutar de cultura y gastronomía.</string>
 
+    <string name="ciu_estrasburgo">Estrasburgo</string>
+    <string name="descripcion_estrasburgo">Una ciudad de cuento en el corazón de Europa.</string>
+    <string name="info_estrasburgo">Estrasburgo mezcla tradición francesa y alemana con gran armonía. Sus canales y su centro histórico son especialmente encantadores.</string>
+
+    <!-- ===================== -->
     <!-- ESPAÑA -->
-    <string name="info_madrid">Madrid es una ciudad viva y acogedora. Cultura, ocio y gastronomía se mezclan en una capital que nunca duerme.</string>
 
-    <string name="info_barcelona">Barcelona une mar, arquitectura y creatividad. El modernismo, las playas y su ambiente cosmopolita la hacen irresistible.</string>
+    <string name="ciu_madrid">Madrid</string>
+    <string name="descripcion_madrid">Una ciudad que siempre está viva.</string>
+    <string name="info_madrid">Madrid es una capital dinámica donde la cultura, el ocio y la gastronomía se mezclan a cualquier hora. Museos, barrios y vida nocturna la hacen irresistible.</string>
 
-    <string name="info_sevilla">Sevilla es arte, historia y pasión. Sus monumentos, su clima y su carácter andaluz conquistan a cualquier visitante.</string>
+    <string name="ciu_barcelona">Barcelona</string>
+    <string name="descripcion_barcelona">Creatividad frente al mar.</string>
+    <string name="info_barcelona">Barcelona une arquitectura única, playas y un ambiente cosmopolita. Es una ciudad abierta, moderna y llena de personalidad.</string>
 
-    <string name="info_granada">Granada enamora con la Alhambra y su mezcla cultural. Es una ciudad histórica con un entorno natural espectacular.</string>
+    <string name="ciu_sevilla">Sevilla</string>
+    <string name="descripcion_sevilla">Historia, arte y pasión andaluza.</string>
+    <string name="info_sevilla">Sevilla destaca por su legado histórico y su carácter alegre. Su arquitectura y su clima la convierten en una ciudad muy especial.</string>
 
-    <string name="info_valencia">Valencia combina tradición y modernidad. Playa, gastronomía y arquitectura contemporánea la convierten en una ciudad muy completa.</string>
+    <string name="ciu_granada">Granada</string>
+    <string name="descripcion_granada">Donde Oriente y Occidente se encuentran.</string>
+    <string name="info_granada">Granada es famosa por la Alhambra y su mezcla cultural única. Su entorno natural y su historia enamoran a quien la visita.</string>
 
-    <string name="info_bilbao">Bilbao es moderna y cultural. Su transformación urbana y su entorno verde la hacen ideal para una escapada diferente.</string>
+    <string name="ciu_valencia">Valencia</string>
+    <string name="descripcion_valencia">Tradición y futuro mirando al mar.</string>
+    <string name="info_valencia">Valencia combina playas, gastronomía y arquitectura moderna. Es una ciudad luminosa y muy equilibrada.</string>
 
+    <string name="ciu_bilbao">Bilbao</string>
+    <string name="descripcion_bilbao">Una ciudad que se reinventó.</string>
+    <string name="info_bilbao">Bilbao es un ejemplo de transformación urbana y cultural. Rodeada de naturaleza, ofrece arte, gastronomía y diseño.</string>
+
+    <!-- ===================== -->
     <!-- SUIZA -->
-    <string name="info_zurich">Zúrich es una ciudad elegante y moderna. Combina naturaleza, lago y vida urbana con una alta calidad de vida.</string>
 
-    <string name="info_ginebra">Ginebra es internacional y sofisticada. Situada junto al lago, ofrece paisajes alpinos y un ambiente cosmopolita.</string>
+    <string name="ciu_zurich">Zúrich</string>
+    <string name="descripcion_zurich">Naturaleza y ciudad en perfecto equilibrio.</string>
+    <string name="info_zurich">Zúrich combina lago, montañas y vida urbana con gran calidad. Es moderna, elegante y muy acogedora.</string>
 
-    <string name="info_lucerna">Lucerna parece sacada de una postal. Puentes históricos, lago y montañas crean un entorno espectacular.</string>
+    <string name="ciu_ginebra">Ginebra</string>
+    <string name="descripcion_ginebra">Internacional y sofisticada.</string>
+    <string name="info_ginebra">Ginebra está situada junto a un lago espectacular y rodeada de Alpes. Es una ciudad cosmopolita y tranquila.</string>
 
-    <string name="info_berna">Berna es tranquila y encantadora. Su casco antiguo medieval es Patrimonio de la Humanidad.</string>
+    <string name="ciu_lucerna">Lucerna</string>
+    <string name="descripcion_lucerna">Una postal hecha ciudad.</string>
+    <string name="info_lucerna">Lucerna destaca por su puente histórico y su entorno natural. Es una de las ciudades más bonitas de Suiza.</string>
 
-    <string name="info_interlaken">Interlaken es el paraíso de la naturaleza. Rodeada de montañas y lagos, es ideal para aventuras al aire libre.</string>
+    <string name="ciu_berna">Berna</string>
+    <string name="descripcion_berna">Historia medieval intacta.</string>
+    <string name="info_berna">Berna conserva uno de los cascos antiguos mejor preservados de Europa. Su ambiente es tranquilo y muy auténtico.</string>
 
-    <string name="info_montreux">Montreux destaca por su paseo junto al lago y su ambiente relajado, con vistas espectaculares a los Alpes.</string>
+    <string name="ciu_interlaken">Interlaken</string>
+    <string name="descripcion_interlaken">El corazón de los Alpes.</string>
+    <string name="info_interlaken">Interlaken está rodeada de montañas y lagos espectaculares. Es ideal para los amantes de la naturaleza.</string>
 
+    <string name="ciu_montreux">Montreux</string>
+    <string name="descripcion_montreux">Elegancia a orillas del lago.</string>
+    <string name="info_montreux">Montreux ofrece paisajes impresionantes y un ambiente relajado. Es famosa por su paseo junto al lago y su festival de música.</string>
+
+    <!-- ===================== -->
     <!-- NORUEGA -->
-    <string name="info_oslo">Oslo es moderna y verde. Combina arquitectura contemporánea, cultura y naturaleza en equilibrio perfecto.</string>
 
-    <string name="info_bergen">Bergen es la puerta de los fiordos. Colorida y pintoresca, está rodeada de paisajes naturales impresionantes.</string>
+    <string name="ciu_oslo">Oslo</string>
+    <string name="descripcion_oslo">Naturaleza y diseño en perfecta armonía.</string>
+    <string name="info_oslo">Oslo es una capital moderna rodeada de bosques y fiordos. Combina arquitectura contemporánea, museos de primer nivel y un fuerte compromiso con la sostenibilidad.</string>
 
-    <string name="info_stavanger">Stavanger es acogedora y aventurera. Ideal para explorar fiordos y rutas naturales famosas.</string>
+    <string name="ciu_bergen">Bergen</string>
+    <string name="descripcion_bergen">La puerta de entrada a los fiordos.</string>
+    <string name="info_bergen">Bergen es una ciudad pintoresca rodeada de montañas y mar. Su puerto histórico y su cercanía a los fiordos la convierten en uno de los destinos más bellos de Noruega.</string>
 
-    <string name="info_alesund">Ålesund destaca por su arquitectura art nouveau y su ubicación entre mar y montañas.</string>
+    <string name="ciu_stavanger">Stavanger</string>
+    <string name="descripcion_stavanger">Aventura entre fiordos y acantilados.</string>
+    <string name="info_stavanger">Stavanger es conocida por su casco antiguo y por ser punto de partida hacia paisajes naturales espectaculares como el Preikestolen.</string>
 
-    <string name="info_trondheim">Trondheim es histórica y tranquila. Fue la antigua capital vikinga y conserva un encanto especial.</string>
+    <string name="ciu_alesund">Ålesund</string>
+    <string name="descripcion_alesund">Arte, mar y montañas.</string>
+    <string name="info_alesund">Ålesund destaca por su arquitectura art nouveau y su ubicación privilegiada entre fiordos y montañas. Es una de las ciudades más fotogénicas de Noruega.</string>
 
-    <string name="info_tromso">Tromsø es ideal para ver auroras boreales. Una ciudad ártica rodeada de paisajes únicos.</string>
+    <string name="ciu_trondheim">Trondheim</string>
+    <string name="descripcion_trondheim">Historia vikinga con alma joven.</string>
+    <string name="info_trondheim">Trondheim fue la antigua capital de Noruega y conserva un importante legado histórico. Hoy es una ciudad universitaria con un ambiente dinámico y acogedor.</string>
 
+    <string name="ciu_tromso">Tromsø</string>
+    <string name="descripcion_tromso">Bajo las luces del Ártico.</string>
+    <string name="info_tromso">Tromsø es uno de los mejores lugares del mundo para ver auroras boreales. Rodeada de naturaleza salvaje, ofrece una experiencia ártica única.</string>
+
+    <!-- ===================== -->
     <!-- GRECIA -->
-    <string name="info_atenas">Atenas es historia viva. La Acrópolis y sus barrios históricos reflejan el origen de la civilización occidental.</string>
 
-    <string name="info_santorini">Santorini es una de las islas más bellas del mundo. Sus casas blancas y atardeceres son inolvidables.</string>
+    <string name="ciu_atenas">Atenas</string>
+    <string name="descripcion_atenas">Donde nació la civilización occidental.</string>
+    <string name="info_atenas">Atenas es una ciudad histórica dominada por la Acrópolis. Mezcla ruinas antiguas con barrios modernos llenos de vida y cultura.</string>
 
-    <string name="info_mykonos">Mykonos combina playas paradisíacas y vida nocturna en un entorno elegante y vibrante.</string>
+    <string name="ciu_santorini">Santorini</string>
+    <string name="descripcion_santorini">Atardeceres que no se olvidan.</string>
+    <string name="info_santorini">Santorini es famosa por sus casas blancas, su caldera volcánica y sus vistas al mar Egeo. Es uno de los destinos más icónicos del mundo.</string>
 
-    <string name="info_salonica">Salónica es joven y dinámica. Mezcla historia, cultura y un ambiente moderno frente al mar.</string>
+    <string name="ciu_mykonos">Mykonos</string>
+    <string name="descripcion_mykonos">Playas, estilo y noches infinitas.</string>
+    <string name="info_mykonos">Mykonos combina playas paradisíacas con una vida nocturna vibrante. Es una isla cosmopolita, elegante y muy animada.</string>
 
-    <string name="info_heraclion">Heraclión es la puerta a Creta. Ideal para descubrir playas, historia y gastronomía griega.</string>
+    <string name="ciu_salonica">Salónica</string>
+    <string name="descripcion_salonica">Joven, histórica y frente al mar.</string>
+    <string name="info_salonica">Salónica es una ciudad dinámica con una rica herencia cultural. Su ambiente universitario y su paseo marítimo la hacen muy atractiva.</string>
 
-    <string name="info_rodas">Rodas ofrece historia medieval y playas espectaculares. Una isla perfecta para cultura y descanso.</string>
+    <string name="ciu_heraclion">Heraclión</string>
+    <string name="descripcion_heraclion">La puerta a la legendaria Creta.</string>
+    <string name="info_heraclion">Heraclión es el principal acceso a Creta y a su historia milenaria. Desde aquí se descubren playas, gastronomía y restos de la civilización minoica.</string>
+
+    <string name="ciu_rodas">Rodas</string>
+    <string name="descripcion_rodas">Historia medieval junto al mar.</string>
+    <string name="info_rodas">Rodas destaca por su ciudad antigua amurallada y sus playas cristalinas. Es un destino perfecto para combinar cultura y descanso.</string>
 
 </resources>
