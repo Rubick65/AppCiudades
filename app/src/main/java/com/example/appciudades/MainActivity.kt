@@ -74,7 +74,7 @@ fun CountryApp(
 @Preview(showSystemUi = true, showBackground = true)
 @Composable
 fun PreviewCountryApp() {
-    AppCiudadesTheme {
+    AppCiudadesTheme(darkTheme = false) {
         Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
             CountryApp(modifier = Modifier.padding(innerPadding), paises = paises)
         }

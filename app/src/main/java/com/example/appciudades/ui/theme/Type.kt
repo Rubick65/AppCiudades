@@ -35,26 +35,27 @@ val Lobster = FontFamily(
 
 val Typography = Typography(
     bodyLarge = TextStyle(
-        fontFamily = FontFamily.Default,
+        fontFamily = Lobster,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
     ),
-    /*Para el titulo
-    titleLarge = TextStyle(
-        fontFamily = Oswald,
+    headlineLarge = TextStyle(
+        fontFamily = Bebasneue,
         fontWeight = FontWeight.Normal,
-        fontSize = 22.sp,
-        lineHeight = 28.sp,
-        letterSpacing = 0.sp
-    ),
-    labelSmall = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Medium,
-        fontSize = 11.sp,
-        lineHeight = 16.sp,
+        fontSize = 40.sp,
+        lineHeight = 24.sp,
         letterSpacing = 0.5.sp
-    )
-     */
+    ),
+
+    headlineMedium = TextStyle(
+        fontFamily = PlayFairDisplau,
+        fontWeight = FontWeight.Normal,
+        fontSize = 25.sp,
+        lineHeight = 24.sp,
+        letterSpacing = 0.5.sp
+    ),
+
+
 )

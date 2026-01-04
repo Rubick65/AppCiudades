@@ -27,15 +27,18 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -48,26 +51,30 @@ import com.example.appciudades.data.paises
 @Composable
 fun CityCard(modifier: Modifier = Modifier, ciudad: Ciudad) {
 
-    var expanded by remember { mutableStateOf(value = false) }
+    var expanded by rememberSaveable(inputs = arrayOf(ciudad.nombreCiudad)) {
+        mutableStateOf(false)
+    }
 
     Card(
         onClick = { expanded = !expanded },
         modifier = modifier
             .padding(start = 20.dp, end = 20.dp, bottom = 10.dp)
             .fillMaxWidth()
+            .shadow(elevation = 20.dp, shape = RoundedCornerShape(8.dp), clip = false)
             .animateContentSize(
                 animationSpec = spring(
                     dampingRatio = Spring.DampingRatioNoBouncy,
                     stiffness = Spring.StiffnessMedium
                 )
-            ),
+            )
+            ,
 
 
         shape = RoundedCornerShape(0.dp),
         border = BorderStroke(width = 4.dp, color = colorResource(R.color.black)),
         // Color de fonde del país
         colors = CardDefaults.cardColors(
-            containerColor = colorResource(R.color.white)
+            containerColor = Color.White
         ),
 
         ) {
@@ -225,18 +232,16 @@ fun CityCardList(
         Text(
             text = stringResource(nombreDelPais),
             fontWeight = FontWeight.Bold,
-            style = MaterialTheme.typography.headlineMedium,
+            style = MaterialTheme.typography.headlineLarge,
             modifier = Modifier.fillMaxWidth(),
             textAlign = TextAlign.Center
 
         )
-
-
         LazyColumn(
             modifier = Modifier
 
         ) {
-            items(ciudades) { ciudad ->
+            items(ciudades, key = {it.nombreCiudad}) { ciudad ->
                 CityCard(ciudad = ciudad)
             }
         }
