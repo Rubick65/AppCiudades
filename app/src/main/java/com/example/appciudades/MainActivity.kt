@@ -80,3 +80,13 @@ fun PreviewCountryApp() {
         }
     }
 }
+
+@Preview(showSystemUi = true, showBackground = true)
+@Composable
+fun PreviewCountryDarkApp() {
+    AppCiudadesTheme(darkTheme = true) {
+        Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+            CountryApp(modifier = Modifier.padding(innerPadding), paises = paises)
+        }
+    }
+}
