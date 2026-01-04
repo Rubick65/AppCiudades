@@ -6,5 +6,6 @@
     <color name="fondoSuiza">#d8c7fa</color>
     <color name="fondoNoruega">#ff7676</color>
     <color name="fondoGrecia">#c7fae9</color>
+    <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
