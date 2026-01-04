@@ -9,6 +9,8 @@
     <!-- ===================== -->
     <!-- ITALIA -->
 
+    <string name="pais_italia">Italia</string>
+
     <string name="ciu_roma">Roma</string>
     <string name="descripcion_roma">Camina por una ciudad donde cada piedra es historia viva.</string>
     <string name="info_roma">Roma es una ciudad eterna donde conviven ruinas milenarias, plazas llenas de vida y una cultura que ha marcado al mundo entero. Desde el Coliseo hasta el Vaticano, visitar Roma es viajar al origen de Europa.</string>
@@ -35,6 +37,8 @@
 
     <!-- ===================== -->
     <!-- FRANCIA -->
+
+    <string name="pais_francia">Francia</string>
 
     <string name="ciu_paris">París</string>
     <string name="descripcion_paris">La ciudad que nunca deja de enamorar.</string>
@@ -63,6 +67,8 @@
     <!-- ===================== -->
     <!-- ESPAÑA -->
 
+    <string name="pais_espana">España</string>
+
     <string name="ciu_madrid">Madrid</string>
     <string name="descripcion_madrid">Una ciudad que siempre está viva.</string>
     <string name="info_madrid">Madrid es una capital dinámica donde la cultura, el ocio y la gastronomía se mezclan a cualquier hora. Museos, barrios y vida nocturna la hacen irresistible.</string>
@@ -83,12 +89,14 @@
     <string name="descripcion_valencia">Tradición y futuro mirando al mar.</string>
     <string name="info_valencia">Valencia combina playas, gastronomía y arquitectura moderna. Es una ciudad luminosa y muy equilibrada.</string>
 
-    <string name="ciu_bilbao">Bilbao</string>
-    <string name="descripcion_bilbao">Una ciudad que se reinventó.</string>
-    <string name="info_bilbao">Bilbao es un ejemplo de transformación urbana y cultural. Rodeada de naturaleza, ofrece arte, gastronomía y diseño.</string>
+    <string name="ciu_canarias">Canarias</string>
+    <string name="descripcion_canarias">Volcanes, playas y clima perfecto todo el año.</string>
+    <string name="info_canarias">Canarias es un archipiélago de paisajes volcánicos, playas espectaculares y gran diversidad natural. Cada isla ofrece una experiencia diferente en un entorno privilegiado.</string>
 
     <!-- ===================== -->
     <!-- SUIZA -->
+
+    <string name="pais_suiza">Suiza</string>
 
     <string name="ciu_zurich">Zúrich</string>
     <string name="descripcion_zurich">Naturaleza y ciudad en perfecto equilibrio.</string>
@@ -117,6 +125,8 @@
     <!-- ===================== -->
     <!-- NORUEGA -->
 
+    <string name="pais_noruega">Noruega</string>
+
     <string name="ciu_oslo">Oslo</string>
     <string name="descripcion_oslo">Naturaleza y diseño en perfecta armonía.</string>
     <string name="info_oslo">Oslo es una capital moderna rodeada de bosques y fiordos. Combina arquitectura contemporánea, museos de primer nivel y un fuerte compromiso con la sostenibilidad.</string>
@@ -143,6 +153,8 @@
 
     <!-- ===================== -->
     <!-- GRECIA -->
+
+    <string name="pais_grecia">Grecia</string>
 
     <string name="ciu_atenas">Atenas</string>
     <string name="descripcion_atenas">Donde nació la civilización occidental.</string>
