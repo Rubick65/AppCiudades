@@ -74,7 +74,7 @@ fun CityCard(modifier: Modifier = Modifier, ciudad: Ciudad) {
         border = BorderStroke(width = 4.dp, color = colorResource(R.color.black)),
         // Color de fonde del país
         colors = CardDefaults.cardColors(
-            containerColor = Color.White
+            containerColor = MaterialTheme.colorScheme.primary
         ),
 
         ) {
@@ -99,6 +99,7 @@ private fun CityText(
             text = stringResource(ciudad.nombreCiudad),
             fontWeight = FontWeight.Bold,
             style = MaterialTheme.typography.headlineMedium,
+            color = MaterialTheme.colorScheme.secondary,
             modifier = if (centrado) Modifier.fillMaxWidth() else Modifier,
             textAlign = if (centrado) TextAlign.Center else TextAlign.Start
         )
@@ -108,6 +109,7 @@ private fun CityText(
         Text(
             text = stringResource(ciudad.descripcionCorta),
             style = MaterialTheme.typography.bodyLarge,
+            color = MaterialTheme.colorScheme.secondary,
             modifier = if (centrado) Modifier.fillMaxWidth() else Modifier,
             textAlign = if (centrado) TextAlign.Center else TextAlign.Start
         )
@@ -211,6 +213,7 @@ private fun ExpandedCityInformation(
         Text(
             text = stringResource(ciudad.descripcionLarga),
             style = MaterialTheme.typography.bodyLarge,
+            color = MaterialTheme.colorScheme.secondary,
             modifier = Modifier.fillMaxWidth(),
             textAlign = TextAlign.Start
         )
@@ -233,6 +236,7 @@ fun CityCardList(
             text = stringResource(nombreDelPais),
             fontWeight = FontWeight.Bold,
             style = MaterialTheme.typography.headlineLarge,
+            color = MaterialTheme.colorScheme.tertiary,
             modifier = Modifier.fillMaxWidth(),
             textAlign = TextAlign.Center
 
