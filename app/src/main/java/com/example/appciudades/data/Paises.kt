@@ -7,7 +7,6 @@ import androidx.annotation.StringRes
 import com.example.appciudades.R
 
 data class Ciudad(
-
     @StringRes val nombreCiudad: Int,
     @StringRes val descripcionCorta: Int,
     @StringRes val descripcionLarga: Int,

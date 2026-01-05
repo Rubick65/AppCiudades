@@ -4,24 +4,17 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.gestures.detectDragGestures
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import com.example.appciudades.Interfaz.CityCardList
-import com.example.appciudades.Interfaz.CountryCard
 import com.example.appciudades.Interfaz.CountryList
 import com.example.appciudades.data.Pais
 import com.example.appciudades.data.paises
@@ -41,36 +34,42 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+/**
+ * Inicializa los distintos componentes para la app de países
+ */
 @Composable
 fun CountryApp(
     modifier: Modifier = Modifier,
-    paises: List<Pais>,
+    paises: List<Pais>, // Lista de países
 ) {
-
+    // Indica el país actual que se mostrará actualmente
     var paisActual by remember { mutableStateOf(value = 0) }
 
     Scaffold(
         modifier = modifier,
-        topBar = {
+        topBar = { // En la barra superior
+            // Se crea la lista de cartas con las banderas de cada país
             CountryList(
+                // Lista de países
                 paises = paises,
                 onClick = { indiceSeleccionado ->
                     paisActual = indiceSeleccionado
-                })
+                })  // Cuando se hace click en una de estas cartas con banderas se actualiza el país seleccionado o actual
         }
     ) { innerPadding ->
-
+        // Se crea las distintias cards con las ciudades en función del país seleccionado
         CityCardList(
             modifier = Modifier.padding(innerPadding),
-            ciudades = paises[paisActual].listaCiudades,
-            backgroundColor = paises[paisActual].colorFondo,
-            nombreDelPais = paises[paisActual].nombrePais
+            ciudades = paises[paisActual].listaCiudades, // Lista de ciudades del país
+            backgroundColor = paises[paisActual].colorFondo, // Color de fondo de cada país
+            nombreDelPais = paises[paisActual].nombrePais // Nombre de cada país
         )
-
     }
 }
 
-
+/**
+ * Preview de la app sin tema oscuro
+ */
 @Preview(showSystemUi = true, showBackground = true)
 @Composable
 fun PreviewCountryApp() {
@@ -81,6 +80,9 @@ fun PreviewCountryApp() {
     }
 }
 
+/**
+ * Preview de la app con tema oscuro
+ */
 @Preview(showSystemUi = true, showBackground = true)
 @Composable
 fun PreviewCountryDarkApp() {
