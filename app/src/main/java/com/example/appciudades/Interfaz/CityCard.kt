@@ -73,7 +73,7 @@ fun CityCard(modifier: Modifier = Modifier, ciudad: Ciudad) {
         shape = RoundedCornerShape(0.dp), // Para que no tenga los bordes redondeados
         border = BorderStroke(
             width = 4.dp,
-            color = colorResource(R.color.black)
+            color = MaterialTheme.colorScheme.onPrimary
         ), // Indica el tamaño del borde y su color
         // Color de fonde del país
         colors = CardDefaults.cardColors(

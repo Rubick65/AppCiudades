@@ -14,16 +14,16 @@ import androidx.compose.ui.platform.LocalContext
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80, //Color de fondo
     secondary = PurpleGrey80, //Color de letras
-    tertiary = Pink80 //Color de texto pais
+    tertiary = Pink80, //Color de texto pais
+    onPrimary = bordeOscuro //Color de borde de las cartas
 )
 
 private val LightColorScheme = lightColorScheme(
     primary = Purple40, //Color de fondo
     secondary = PurpleGrey40, //Color de letras
-    tertiary = Pink40 //Color de texto pais
-
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
+    tertiary = Pink40, //Color de texto pais
+    onPrimary = bordeClaro //Color de bordes de las cartas
+    /*
     surface = Color(0xFFFFFBFE),
     onPrimary = Color.White,
     onSecondary = Color.White,
