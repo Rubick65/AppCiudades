@@ -1,6 +1,5 @@
 package com.example.appciudades.data
 
-import android.graphics.Color
 import androidx.annotation.ColorRes
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
