@@ -89,9 +89,65 @@
     <string name="descripcion_valencia">Tradición y futuro mirando al mar.</string>
     <string name="info_valencia">Valencia combina playas, gastronomía y arquitectura moderna. Es una ciudad luminosa y muy equilibrada.</string>
 
-    <string name="ciu_canarias">Canarias</string>
+    <string name="ciu_canarias">Arrecife</string>
     <string name="descripcion_canarias">Volcanes, playas y clima perfecto todo el año.</string>
     <string name="info_canarias">Canarias es un archipiélago de paisajes volcánicos, playas espectaculares y gran diversidad natural. Cada isla ofrece una experiencia diferente en un entorno privilegiado.</string>
+
+    <string name="ciu_coruna">A Coruña</string>
+    <string name="descripcion_coruna">Atlántico, historia y una ciudad con carácter.</string>
+    <string name="info_coruna">A Coruña es una ciudad costera marcada por el océano Atlántico, con playas urbanas, un casco histórico con encanto y una identidad muy ligada al mar.</string>
+
+    <string name="ciu_palma">Palma</string>
+    <string name="descripcion_palma">Mediterráneo, historia y vida junto al mar.</string>
+    <string name="info_palma">Palma combina patrimonio histórico, playas y ambiente mediterráneo. Su catedral frente al mar y su casco antiguo la hacen especialmente atractiva.</string>
+
+    <string name="ciu_zamora">Zamora</string>
+    <string name="descripcion_zamora">Románico, silencio y belleza junto al Duero.</string>
+    <string name="info_zamora">Zamora es una ciudad tranquila conocida por su arte románico y su ubicación a orillas del río Duero, ideal para una visita pausada.</string>
+
+    <string name="ciu_alicante">Alicante</string>
+    <string name="descripcion_alicante">Sol, mar y vida mediterránea.</string>
+    <string name="info_alicante">Alicante es una ciudad costera con playas urbanas, clima suave y un ambiente relajado marcado por el Mediterráneo.</string>
+
+    <string name="ciu_bilbao">Bilbao</string>
+    <string name="descripcion_bilbao">Cultura, diseño y transformación urbana.</string>
+    <string name="info_bilbao">Bilbao destaca por su renovación cultural, su gastronomía y su entorno verde entre ría y montañas.</string>
+
+    <string name="ciu_burgos">Burgos</string>
+    <string name="descripcion_burgos">Historia medieval en estado puro.</string>
+    <string name="info_burgos">Burgos es una ciudad histórica conocida por su impresionante catedral y su legado medieval.</string>
+
+    <string name="ciu_girona">Girona</string>
+    <string name="descripcion_girona">Historia, murallas y esencia catalana.</string>
+    <string name="info_girona">Girona combina un casco antiguo muy bien conservado con murallas, ríos y un gran encanto cultural.</string>
+
+    <string name="ciu_huesca">Huesca</string>
+    <string name="descripcion_huesca">Naturaleza y calma a los pies del Pirineo.</string>
+    <string name="info_huesca">Huesca es una ciudad tranquila cercana al Pirineo, ideal como punto de partida para disfrutar de la naturaleza.</string>
+
+    <string name="ciu_malaga">Málaga</string>
+    <string name="descripcion_malaga">Cultura, playa y luz del sur.</string>
+    <string name="info_malaga">Málaga combina playas, museos y un casco histórico animado con el carácter abierto del sur.</string>
+
+    <string name="ciu_marbella">Marbella</string>
+    <string name="descripcion_marbella">Lujo y mar en la Costa del Sol.</string>
+    <string name="info_marbella">Marbella es conocida por su clima, sus playas y su mezcla de lujo, ocio y casco antiguo.</string>
+
+    <string name="ciu_santander">Santander</string>
+    <string name="descripcion_santander">Elegancia y mar Cantábrico.</string>
+    <string name="info_santander">Santander es una ciudad costera elegante, con playas urbanas y un entorno natural privilegiado.</string>
+
+    <string name="ciu_segovia">Segovia</string>
+    <string name="descripcion_segovia">Historia tallada en piedra.</string>
+    <string name="info_segovia">Segovia destaca por su acueducto romano, su casco histórico y su gran valor patrimonial.</string>
+
+    <string name="ciu_tarragona">Tarragona</string>
+    <string name="descripcion_tarragona">Roma antigua junto al Mediterráneo.</string>
+    <string name="info_tarragona">Tarragona conserva importantes restos romanos junto al mar y un centro histórico lleno de historia.</string>
+
+    <string name="ciu_teruel">Teruel</string>
+    <string name="descripcion_teruel">Arte mudéjar y tranquilidad.</string>
+    <string name="info_teruel">Teruel es una ciudad pequeña y tranquila, conocida por su arte mudéjar y su encanto histórico.</string>
 
     <!-- ===================== -->
     <!-- SUIZA -->

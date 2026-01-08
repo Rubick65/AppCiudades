@@ -63,6 +63,92 @@ val paises = listOf(
                 R.string.info_valencia,
                 R.drawable.valencia
             ),
+            Ciudad(
+                R.string.ciu_zamora,
+                R.string.descripcion_zamora,
+                R.string.info_zamora,
+                R.drawable.zamora
+
+
+            ),
+            Ciudad(
+                R.string.ciu_palma,
+                R.string.descripcion_palma,
+                R.string.info_palma,
+                R.drawable.palma
+            ),
+            Ciudad(
+                R.string.ciu_coruna,
+                R.string.descripcion_coruna,
+                R.string.info_coruna,
+                R.drawable.coruna
+            ),
+            Ciudad(
+                R.string.ciu_alicante,
+                R.string.descripcion_alicante,
+                R.string.ciu_coruna,
+                R.drawable.alicante
+            ),
+            Ciudad(
+                R.string.ciu_bilbao,
+                R.string.descripcion_bilbao,
+                R.string.info_bilbao,
+                R.drawable.bilbao
+            ),
+            Ciudad(
+                R.string.ciu_burgos,
+                R.string.descripcion_burgos,
+                R.string.info_burgos,
+                R.drawable.burgos
+            ),
+            Ciudad(
+                R.string.ciu_girona,
+                R.string.descripcion_girona,
+                R.string.info_girona,
+                R.drawable.girona
+            ),
+            Ciudad(
+                R.string.ciu_huesca,
+                R.string.descripcion_huesca,
+                R.string.info_huesca,
+                R.drawable.huesca
+            ),
+            Ciudad(
+                R.string.ciu_malaga,
+                R.string.descripcion_malaga,
+                R.string.info_malaga,
+                R.drawable.malaga
+            ),
+            Ciudad(
+                R.string.ciu_marbella,
+                R.string.descripcion_marbella,
+                R.string.info_marbella,
+                R.drawable.marbella
+            ),
+            Ciudad(
+                R.string.ciu_santander,
+                R.string.descripcion_santander,
+                R.string.info_santander,
+                R.drawable.santander
+            ),
+            Ciudad(
+                R.string.ciu_segovia,
+                R.string.descripcion_segovia,
+                R.string.info_segovia,
+                R.drawable.segovia
+            ),
+            Ciudad(
+                R.string.ciu_tarragona,
+                R.string.descripcion_tarragona ,
+                R.string.info_tarragona,
+                R.drawable.tarragona
+            ),
+            Ciudad(
+                R.string.ciu_teruel,
+                R.string.descripcion_teruel,
+                R.string.info_teruel,
+                R.drawable.teruel
+            ),
         ),
     ),
     Pais(
