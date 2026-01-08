@@ -22,6 +22,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -39,9 +40,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.appciudades.CountryApp
 import com.example.appciudades.R
 import com.example.appciudades.data.Ciudad
 import com.example.appciudades.data.paises
+import com.example.appciudades.ui.theme.AppCiudadesTheme
 
 
 /**
@@ -287,7 +290,9 @@ fun CityCardList(
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun CityCardPreview() {
-    CityCard(ciudad = paises[0].listaCiudades[0])
+    AppCiudadesTheme(darkTheme = false) {
+        CityCard(ciudad = paises[0].listaCiudades[0])
+    }
 }
 
 
@@ -298,9 +303,27 @@ fun CityCardPreview() {
 @Composable
 fun CityCardListPreview() {
     val paisActual = 5
-    CityCardList(
-        ciudades = paises[paisActual].listaCiudades,
-        backgroundColor = paises[paisActual].colorFondo,
-        nombreDelPais = paises[paisActual].nombrePais
-    )
+    AppCiudadesTheme(darkTheme = false) {
+        CityCardList(
+            ciudades = paises[paisActual].listaCiudades,
+            backgroundColor = paises[paisActual].colorFondo,
+            nombreDelPais = paises[paisActual].nombrePais
+        )
+    }
+}
+
+/**
+ * Preview de la lista completa de ciudades de un país
+ */
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+fun CityCardListPreviewDark() {
+    val paisActual = 5
+    AppCiudadesTheme(darkTheme = true) {
+        CityCardList(
+            ciudades = paises[paisActual].listaCiudades,
+            backgroundColor = paises[paisActual].colorFondo,
+            nombreDelPais = paises[paisActual].nombrePais
+        )
+    }
 }
