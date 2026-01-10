@@ -235,5 +235,6 @@
     <string name="ciu_rodas">Rodas</string>
     <string name="descripcion_rodas">Historia medieval junto al mar.</string>
     <string name="info_rodas">Rodas destaca por su ciudad antigua amurallada y sus playas cristalinas. Es un destino perfecto para combinar cultura y descanso.</string>
+    <string name="ciudades_favoritas">Favoritas</string>
 
 </resources>

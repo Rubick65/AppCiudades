@@ -65,12 +65,20 @@ fun CountryCard(modifier: Modifier = Modifier, pais: Pais, onClick: () -> Unit) 
 fun CountryList(
     modifier: Modifier = Modifier,
     paises: List<Pais>,
-    onClick: (Int) -> Unit
+    onClick: (Int) -> Unit,
+    onFavClick: () -> Unit
 ) {
     LazyRow(
         // Para que sea una fila deslizable
         modifier = modifier.height(40.dp), // Tamaño fijo para que no queden huecos vacíos
     ) {
+        item {
+            FavoriteCard(
+                modifier = modifier,
+                onClick = onFavClick
+            )
+        }
+
         // Por cada país
         itemsIndexed(items = paises) { index, pais -> // Sacamos el indice y el país
             // Se va creando cada carta de país y se pasa el indice
@@ -78,6 +86,7 @@ fun CountryList(
         }
     }
 }
+
 
 /**
  * Preview de una sola carta de país
@@ -94,5 +103,5 @@ fun CountryCardPreview() {
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun CountryListCardPreview() {
-    CountryList(paises = paises, onClick = {})
+    CountryList(paises = paises, onClick = {}, onFavClick = {})
 }

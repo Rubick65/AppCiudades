@@ -3,28 +3,58 @@ package com.example.appciudades.data
 import androidx.annotation.ColorRes
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
+import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.mutableStateOf
 import com.example.appciudades.R
+import kotlin.Int
 
 data class Ciudad(
     @StringRes val nombreCiudad: Int,
     @StringRes val descripcionCorta: Int,
     @StringRes val descripcionLarga: Int,
     @DrawableRes val imagen: Int,
+    val favorite: MutableState<Boolean> = mutableStateOf(false),
+    val expanded: MutableState<Boolean> = mutableStateOf(false)
+)
 
+// Permite crear copias de los elementos mutables dentro de un objeto
+fun Ciudad.deepCopy(): Ciudad {
+    return this.copy(
+        // En este caso solo nos interesa el estado de expandido
+        expanded = mutableStateOf(false)
     )
+}
 
 data class Pais(
     val flagSize: Int,
     @StringRes val nombrePais: Int,
     @DrawableRes val banderaPais: Int,
     @ColorRes val colorFondo: Int,
-    val listaCiudades: List<Ciudad>
+    var listaCiudades: List<Ciudad>
+)
+
+data class CiudadesFavoritas(
+    val flagSize: Int,
+    @StringRes val nombreFavoritos: Int,
+    @DrawableRes val iconoFavoritos: Int,
+    @ColorRes val colorFondo: Int,
+    var listaCiudadesFavoritas: MutableList<Ciudad>
+)
+
+
+val ciudadesFavoritas = CiudadesFavoritas(
+    flagSize = 40,
+    nombreFavoritos = R.string.ciudades_favoritas,
+    R.drawable.on,
+    colorFondo = R.color.fondoSuiza,
+    listaCiudadesFavoritas = mutableStateListOf()
 )
 
 val paises = listOf(
     Pais(
 
-        40,R.string.pais_espana, R.drawable.es, R.color.fondoEspaña,
+        40, R.string.pais_espana, R.drawable.es, R.color.fondoEspaña,
         listOf(
             Ciudad(
                 R.string.ciu_madrid,
@@ -138,7 +168,7 @@ val paises = listOf(
             ),
             Ciudad(
                 R.string.ciu_tarragona,
-                R.string.descripcion_tarragona ,
+                R.string.descripcion_tarragona,
                 R.string.info_tarragona,
                 R.drawable.tarragona
             ),
@@ -192,7 +222,7 @@ val paises = listOf(
         ),
     ),
     Pais(
-        40,R.string.pais_francia, R.drawable.fr, R.color.fondoFrancia,
+        40, R.string.pais_francia, R.drawable.fr, R.color.fondoFrancia,
         listOf(
             Ciudad(
                 R.string.ciu_paris,
@@ -273,7 +303,7 @@ val paises = listOf(
         )
     ),
     Pais(
-        40,R.string.pais_noruega, R.drawable.no, R.color.fondoNoruega, listOf(
+        40, R.string.pais_noruega, R.drawable.no, R.color.fondoNoruega, listOf(
             Ciudad(
                 R.string.ciu_oslo,
                 R.string.descripcion_oslo,
@@ -313,7 +343,7 @@ val paises = listOf(
         )
     ),
     Pais(
-        40,R.string.pais_grecia, R.drawable.gr, R.color.fondoGrecia, listOf(
+        40, R.string.pais_grecia, R.drawable.gr, R.color.fondoGrecia, listOf(
             Ciudad(
                 R.string.ciu_atenas,
                 R.string.descripcion_atenas,

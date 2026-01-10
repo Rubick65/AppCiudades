@@ -14,15 +14,18 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentHeight
+import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -40,9 +43,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.appciudades.CountryApp
 import com.example.appciudades.R
 import com.example.appciudades.data.Ciudad
+import com.example.appciudades.data.ciudadesFavoritas
+import com.example.appciudades.data.deepCopy
 import com.example.appciudades.data.paises
 import com.example.appciudades.ui.theme.AppCiudadesTheme
 
@@ -53,14 +57,9 @@ import com.example.appciudades.ui.theme.AppCiudadesTheme
 @Composable
 fun CityCard(modifier: Modifier = Modifier, ciudad: Ciudad) {
 
-    // Indica si las cards están expandidas o no, recuerda temporalmente el estado
-    var expanded by rememberSaveable(inputs = arrayOf(ciudad.nombreCiudad)) {
-        mutableStateOf(false)
-    }
-
     Card(
         onClick = {
-            expanded = !expanded
+            ciudad.expanded.value = !ciudad.expanded.value
         }, // Cuando se clikea la card se cambia el estado de expanded
         modifier = modifier
             .padding(start = 20.dp, end = 20.dp, bottom = 10.dp)
@@ -84,12 +83,56 @@ fun CityCard(modifier: Modifier = Modifier, ciudad: Ciudad) {
         ), // Color de fondo de cada card
 
     ) {
-        // En caso de que la carta esté expandida
-        if (expanded) {
-            // Se expande la información
-            ExpandedCityInformation(modifier, ciudad = ciudad)
-        } else
-            NotExpandedInformationCard(ciudad = ciudad)
+
+
+        Box {
+            // En caso de que la carta esté expandida
+            if (ciudad.expanded.value) {
+                // Se expande la información
+                ExpandedCityInformation(modifier, ciudad = ciudad)
+            } else
+                NotExpandedInformationCard(ciudad = ciudad)
+
+            FavoriteIcon(
+                modifier = modifier.align(Alignment.TopEnd),
+                favorite = ciudad.favorite.value,
+                onClick = {
+                    ciudad.favorite.value = !ciudad.favorite.value
+                    // En caso de que se pulse para que la ciudad esté en la sección de favoritos
+                    if (ciudad.favorite.value)
+                    // Se añade a la lista de favoritos una copia profunda de la ciudad
+                        ciudadesFavoritas.listaCiudadesFavoritas.add(ciudad.deepCopy())
+                    // En caso contrario
+                    else
+                    // Se elimina de la lista de favoritos el elemento, pero no por referencia en
+                    // memoria, sino por el nombre de esta manera evitamos problemas
+                        ciudadesFavoritas.listaCiudadesFavoritas.removeIf {
+                            it.nombreCiudad == ciudad.nombreCiudad
+                        }
+
+                }
+            )
+        }
+    }
+}
+
+@Composable
+private fun FavoriteIcon(
+    modifier: Modifier = Modifier,
+    onClick: () -> Unit,
+    favorite: Boolean
+) {
+    IconButton(
+        onClick = onClick,
+        modifier = modifier.size(50.dp),
+    )
+    {
+        Icon(
+            painter = if (favorite) painterResource(R.drawable.on) else painterResource(R.drawable.off),
+            contentDescription = null,
+            modifier = Modifier.fillMaxSize(),
+            tint = androidx.compose.ui.graphics.Color.Unspecified
+        )
     }
 }
 
@@ -274,6 +317,7 @@ fun CityCardList(
         LazyColumn(
             modifier = Modifier
         ) {
+
             // Se recorre la lista de ciudades, el key sirve para guardar el estado y evitar reinicios
             // innecesarios
             items(ciudades, key = { it.nombreCiudad }) { ciudad ->

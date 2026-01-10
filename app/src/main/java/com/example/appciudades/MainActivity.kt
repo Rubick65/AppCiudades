@@ -17,6 +17,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.appciudades.Interfaz.CityCardList
 import com.example.appciudades.Interfaz.CountryList
 import com.example.appciudades.data.Pais
+import com.example.appciudades.data.ciudadesFavoritas
 import com.example.appciudades.data.paises
 import com.example.appciudades.ui.theme.AppCiudadesTheme
 
@@ -44,6 +45,7 @@ fun CountryApp(
 ) {
     // Indica el país actual que se mostrará actualmente
     var paisActual by remember { mutableStateOf(value = 0) }
+    var favorite by remember { mutableStateOf(false) }
 
     Scaffold(
         modifier = modifier,
@@ -52,18 +54,31 @@ fun CountryApp(
             CountryList(
                 // Lista de países
                 paises = paises,
+                onFavClick = { favorite = true },
                 onClick = { indiceSeleccionado ->
                     paisActual = indiceSeleccionado
+                    favorite = false
                 })  // Cuando se hace click en una de estas cartas con banderas se actualiza el país seleccionado o actual
         }
     ) { innerPadding ->
-        // Se crea las distintias cards con las ciudades en función del país seleccionado
-        CityCardList(
-            modifier = Modifier.padding(innerPadding),
-            ciudades = paises[paisActual].listaCiudades, // Lista de ciudades del país
-            backgroundColor = paises[paisActual].colorFondo, // Color de fondo de cada país
-            nombreDelPais = paises[paisActual].nombrePais // Nombre de cada país
-        )
+
+        if (favorite) {
+            CityCardList(
+                modifier = Modifier.padding(innerPadding),
+                ciudades = ciudadesFavoritas.listaCiudadesFavoritas, // Lista de ciudades del país
+                backgroundColor = ciudadesFavoritas.colorFondo, // Color de fondo de cada país
+                nombreDelPais = ciudadesFavoritas.nombreFavoritos
+            )// Nombre de cada país)
+        } else {
+            // Se crea las distintias cards con las ciudades en función del país seleccionado
+            CityCardList(
+                modifier = Modifier.padding(innerPadding),
+                ciudades = paises[paisActual].listaCiudades, // Lista de ciudades del país
+                backgroundColor = paises[paisActual].colorFondo, // Color de fondo de cada país
+                nombreDelPais = paises[paisActual].nombrePais // Nombre de cada país
+            )
+        }
+
     }
 }
 
