@@ -34,6 +34,7 @@ data class Pais(
     var listaCiudades: List<Ciudad>
 )
 
+// Objeto para la lista de ciudades favoritas
 data class CiudadesFavoritas(
     val flagSize: Int,
     @StringRes val nombreFavoritos: Int,

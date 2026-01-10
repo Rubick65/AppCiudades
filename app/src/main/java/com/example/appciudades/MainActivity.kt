@@ -45,6 +45,7 @@ fun CountryApp(
 ) {
     // Indica el país actual que se mostrará actualmente
     var paisActual by remember { mutableStateOf(value = 0) }
+    // Indica si se está en la zona de favoritos
     var favorite by remember { mutableStateOf(false) }
 
     Scaffold(
@@ -62,7 +63,9 @@ fun CountryApp(
         }
     ) { innerPadding ->
 
+        // En caso de que que si sea la zona de favoritos
         if (favorite) {
+            // Se muestra las ciudades favoritas
             CityCardList(
                 modifier = Modifier.padding(innerPadding),
                 ciudades = ciudadesFavoritas.listaCiudadesFavoritas, // Lista de ciudades del país
