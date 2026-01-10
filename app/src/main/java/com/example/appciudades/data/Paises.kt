@@ -47,7 +47,7 @@ val ciudadesFavoritas = CiudadesFavoritas(
     flagSize = 40,
     nombreFavoritos = R.string.ciudades_favoritas,
     R.drawable.on,
-    colorFondo = R.color.fondoSuiza,
+    colorFondo = R.color.fondoFav,
     listaCiudadesFavoritas = mutableStateListOf()
 )
 
